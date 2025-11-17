@@ -11,6 +11,14 @@ type RoadmapStep = {
 
 const roadmap: RoadmapStep[] = [
 
+
+    {
+        title: "Laminar Research",
+        subtitle: "WorldEditor Development",
+        date: "2025 – Present",
+        description: "Developement and Maintenance of the WorldEditor ",
+        category: "work",
+    },
     {
         title: "Just Flight",
         subtitle: "Flight Simulator Instrumentation",
@@ -18,7 +26,6 @@ const roadmap: RoadmapStep[] = [
         description: "Developement of the CGR-30C gauge ",
         category: "work",
     },
-
     {
         title: "IT & Methods Division – Ministry of Health",
         subtitle: "Internship",
@@ -40,7 +47,6 @@ const roadmap: RoadmapStep[] = [
         description: "Garmin G5, ECAM B747, MFD, IDU680, Shadin mini-FLO for StratoLauncher & Spartan Executive.",
         category: "work",
     },
-
     {
         title: "Surveyor – Census 2024",
         subtitle: "High Commission for Planning",
@@ -61,6 +67,13 @@ const roadmap: RoadmapStep[] = [
         date: "2023 – Present",
         description: "École Marocaine des Sciences d'Ingénieur. Systems architecture, development workflows, modular design.",
         category: "education",
+    },
+    {
+        title: "vRAM Event Manager",
+        subtitle: "Event Manager",
+        date: "july 2022 – Oct 2024",
+        description: "Event scheduling, Routes publishement and coordination with other companies.",
+        category: "work",
     },
     {
         title: "MagX Web App",

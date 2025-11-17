@@ -66,6 +66,7 @@
 }
 .Landing-Text-Button{
     padding-top: 2vh;
+    display: flex;
 }
 .Landing-Text-Button>a{
     transition: all 0.3s ease;
@@ -74,9 +75,10 @@
     justify-content: center;
     align-items: center;
     width: fit-content;
+    margin-right: 10px;
 }
 .lucide-github{
-    margin-right: 1vh;
+    /*margin-right: 1vh;*/
 }
 .Landing-Text-Button>a:hover{
     background-color: rgba(255, 255, 255, 0.55);

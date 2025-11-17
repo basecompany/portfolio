@@ -2,10 +2,12 @@ import React, { useEffect, useState } from "react";
 import vatsimClient from "../../../../assets/clients/vatsim-client.png"
 import inibuildsClient from "../../../../assets/clients/inibuilds-client.png"
 import justflightClient from "../../../../assets/clients/justflight-client.png"
+import laminarClient from "../../../../assets/clients/Laminar_White_BG.jpg"
 
 import justflightproject from "../../../../assets/projects/justflight.png";
 import magxproject from "../../../../assets/projects/magx.png";
 import spartanproject from "../../../../assets/projects/Spartan_Executive.png";
+import WEDproject from "../../../../assets/projects/wed.png";
 
 import "./TaskCarousel.css";
 import {useInView} from "../../../../hooks/useInView.ts";
@@ -23,6 +25,7 @@ const partners = [
     { name: "VATSIM", logo: vatsimClient },
     { name: "iniBuilds", logo: inibuildsClient },
     { name: "JustFlight", logo: justflightClient },
+    { name: "X-Plane", logo: laminarClient },
 ];
 
 const slides: Slide[] = [
@@ -44,23 +47,24 @@ const slides: Slide[] = [
         backgroundColor: "#78350F", // Teal
     },
     {
-        title: "Tooling System Architecture",
+        title: "Freelance Avionics Developer",
         description:
-            "Engineered the CGR-30 avionics abstraction layer with simulation-grade telemetry fidelity and modular UI logic. Built custom state machines for dynamic parameter visualization, runtime config injection, and clean separation of SDK internals. Embedded secure bindings for protected IP and future-proof extensibility across simulation platforms—emulating engine metrics with precise, real-time responsiveness.",
+            "Built the CGR-30 avionics, a glass instrument for general aviation aircraft featuring cylinder monitoring, engine parameters, and fuel planning. Developed modular UI components, real-time data integration, and customizable alert systems to enhance pilot situational awareness and flight safety.",
         // linkLabel: "Review the architecture >",
         orgLabel: "Just Flight",
         imageUrl: justflightproject,
         backgroundColor: "#3e3e3e", // Brown-orange
     },
-    // {
-    //     title: "Pecunia Budgeting Platform",
-    //     description:
-    //         "Built a modular expense tracking and budgeting interface for Pecunia, enabling users to monitor subscriptions, categorize spending, and visualize financial trends in real time. Integrated dynamic budget planning, multi-account support, and secure local-first data architecture. Focused on intuitive UX, customizable dashboards, and extensible logic for savings goal management and subscription oversight.",
-    //     orgLabel: "Pecunia",
-    //     imageUrl: "https://media.discordapp.net/attachments/1359149188461494395/1399076844610912327/pecunia.png?ex=6887af59&is=68865dd9&hm=1d0c33cb6344fb06bc8921ef18feeac22620f5bbf972303daf6abf9fa318cad2&=&format=webp&quality=lossless&width=1527&height=859",
-    //     // linkLabel: "Explore the budgeting tools >",
-    //     backgroundColor: "#001445", // Soft blue
-    // }
+    {
+        title: "Contract C++ Developer",
+        description:
+            "Maintenance and feature development for the X-Plane World Editor (WED), a comprehensive tool for creating and editing scenery for the X-Plane flight simulator. Implemented new functionalities, optimized existing code, and ensured compatibility with the latest X-Plane versions to enhance user experience and scenery creation capabilities.",
+        // linkLabel: "Review the architecture >",
+        orgLabel: "Just Flight",
+        imageUrl: WEDproject,
+        backgroundColor: "#215a5a", // Brown-orange
+    },
+
 
 ];
 

@@ -5,7 +5,6 @@ import MyProjects from "./component/myprojects/MyProjects.tsx";
 import {useEffect, useState} from "react";
 import Header from "./component/Header/Header.tsx";
 import HomeSection, {type I_HomeSectionContent} from "./component/HomeSection/HomeSection.tsx";
-import Footer from "./component/footer/Footer.tsx";
 
 export default function Portfolio() {
 
@@ -14,8 +13,9 @@ export default function Portfolio() {
 
     const HomeSectionContent: I_HomeSectionContent = {
         title: "Hi, There",
-        description: "I build scalable systems, enforce reliability through rigorous testing, and develop real-world simulations with clean architecture.",
-        githubLink: "https://github.com/IlyassBa"
+        description: "I am Ilyass Baba, Driven software engineering with a passion for computer science and aviation. Skilled in a variety of programming languages and technologies, with experience as a freelance developer. Dedicated to continuous learning and applying cutting-edge tools and techniques to deliver innovative solutions. Seeking opportunities to further develop my skills and contribute to dynamic technical teams.",
+        githubLink: "https://github.com/IlyassBa",
+        linkedinLink: "https://www.linkedin.com/in/ilyass-baba-040aa7237/"
     }
 
     useEffect(() => {
@@ -51,7 +51,7 @@ export default function Portfolio() {
             <CVRoadmap/>
             <MyProjects/>
 
-            <Footer/>
+            {/*<Footer/>*/}
 
         </div>
     )

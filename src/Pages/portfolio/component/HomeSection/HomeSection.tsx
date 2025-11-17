@@ -1,12 +1,13 @@
 import "./HomeSection.css"
 import Object from "./component/object/Object.tsx";
-import {Github} from "lucide-react";
+import {Github, Linkedin} from "lucide-react";
 import type {JSX} from "react";
 
 export interface I_HomeSectionContent{
     title: string,
     description: string,
     githubLink: string
+    linkedinLink: string
 }
 export interface I_HomeSectionProps {
     showObjects: boolean;
@@ -30,7 +31,12 @@ function HomeSection({ showObjects, content }: I_HomeSectionProps): JSX.Element 
                 <div className="Landing-Text-Button">
                     <a href={content.githubLink} target="_blank">
                         <Github />
-                        Github
+                        {/*Github*/}
+                    </a>
+
+                    <a href={content.linkedinLink} target="_blank">
+                        <Linkedin />
+                        {/*Github*/}
                     </a>
                 </div>
             </div>

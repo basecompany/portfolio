@@ -36,16 +36,20 @@
 }
 .my-project>div{
     width: 29vw;
-    /*height: 30vh;*/
-    /*border: 1px solid white;*/
-    /*background-color: #090c20;*/
-    /*border-radius: 10px;*/
     margin: 10px;
 }
 
 
 
-/*.my-project>div>img{*/
-/*    border-radius: 10px;*/
-/*    width: 100%;*/
-
+@media (max-width: 768px){
+    .project-card-modal__sidebar {
+        min-width: 220px;
+        max-width: 320px;
+        padding: 2.5rem 2rem 2.5rem 2.5rem;
+        background-color: #181824;
+        border-right: 1px solid #23263a;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

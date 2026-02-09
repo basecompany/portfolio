@@ -150,6 +150,7 @@
     }
     .persona-banner{
         display: block;
+        margin-top: 30vh;
     }
     .banner {
         height: fit-content;
@@ -157,11 +158,24 @@
 }
 
 @media (max-width: 768px){
+    .task-carousel-container{
+        height: 200vh;
+    }
     .partner-logo{
         /*width: 60vw;*/
     }
     .partners-title{
-        margin-bottom: 10vh;
+        margin-bottom: 50vh;
         font-size: 5vw;
+        margin-top: 50vh;
     }
+    .partners-logos {
+        transform: scale(1.5);
+        display: block;
+    }
+    .partner-logo{
+
+        width: 40vw;
+    }
+
 }

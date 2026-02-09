@@ -15,14 +15,14 @@ const roadmap: RoadmapStep[] = [
     {
         title: "Laminar Research",
         subtitle: "WorldEditor Development",
-        date: "2025 – Present",
+        date: "November 2025 – January 2026",
         description: "Developement and Maintenance of the WorldEditor ",
         category: "work",
     },
     {
         title: "Just Flight",
         subtitle: "Flight Simulator Instrumentation",
-        date: "2025 – Present",
+        date: "October 2025 – January Present",
         description: "Developement of the CGR-30C gauge ",
         category: "work",
     },

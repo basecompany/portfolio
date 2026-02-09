@@ -21,7 +21,7 @@ interface Slide {
     backgroundColor?: string;
 }
 
-const partners = [
+const clients = [
     { name: "VATSIM", logo: vatsimClient },
     { name: "iniBuilds", logo: inibuildsClient },
     { name: "JustFlight", logo: justflightClient },
@@ -30,6 +30,32 @@ const partners = [
 
 const slides: Slide[] = [
     {
+        title: "Contract C++ Developer",
+        description:
+            "Maintenance and feature development for the X-Plane World Editor (WED), a comprehensive tool for creating and editing scenery for the X-Plane flight simulator. Implemented new functionalities, optimized existing code, and ensured compatibility with the latest X-Plane versions to enhance user experience and scenery creation capabilities.",
+        // linkLabel: "Review the architecture >",
+        orgLabel: "Laminar Research",
+        imageUrl: WEDproject,
+        backgroundColor: "#215a5a", // Brown-orange
+    },
+    {
+        title: "Freelance Avionics Developer",
+        description:
+            "Developement of avionics for general aviation aircraft featuring cylinder monitoring, engine parameters, fuel planning, Energy management and Attitude. Developed modular UI components, real-time data integration, and customizable alert systems to enhance virtual pilot situational awareness and flight safety.",
+        // linkLabel: "Review the architecture >",
+        orgLabel: "Just Flight",
+        imageUrl: justflightproject,
+        backgroundColor: "#2f6777", // Brown-orange
+    },
+    {
+        title: "Independent consultant Inibuilds",
+        description:"Built custom flight instruments including Shadin mini-FLO fuel flow meters, Garmin G5 EFIS, and Boeing 747 EICAS logic layers—each integrated with real-time telemetry, state machines, and modular UI rendering. Components were designed for high-fidelity simulation responsiveness.",
+        orgLabel: "iniBuilds",
+        // imageUrl: "https://inibuilds.com/cdn/shop/files/FlightSimulator2024_snbDhtIb4s_4472x.png?v=1745919066",
+        imageUrl: spartanproject,
+        backgroundColor: "#78350F", // Teal
+    },
+    {
         title: "Head of Tech departement at Maghreb VACC",
         description:
             "Worked on MAGX, a modular aviation management webapp featuring event scheduling, student records, admin dashboards, and interactive VFR charting. Integrated specialized ATC tools such as ATIS broadcast editors, METAR/TAF visualizers, and real-time frequency coordination. Also served as mentor for S2 engineering students, guiding project architecture and interface implementation through agile cycles and code reviews.",
@@ -37,33 +63,7 @@ const slides: Slide[] = [
         imageUrl: magxproject,
         backgroundColor: "#3e0463", // Navy blue
     },
-    {
-        title: "Independent consultant Inibuilds",
-        description:"Built custom flight instruments including Shadin mini-FLO fuel flow meters, Garmin G5 EFIS, and Boeing 747 EICAS logic layers—each integrated with real-time telemetry, state machines, and modular UI rendering. Components were designed for high-fidelity simulation responsiveness.",
-        // linkLabel: "See the avionics work >",
-        orgLabel: "iniBuilds",
-        // imageUrl: "https://inibuilds.com/cdn/shop/files/FlightSimulator2024_snbDhtIb4s_4472x.png?v=1745919066",
-        imageUrl: spartanproject,
-        backgroundColor: "#78350F", // Teal
-    },
-    {
-        title: "Freelance Avionics Developer",
-        description:
-            "Built the CGR-30 avionics, a glass instrument for general aviation aircraft featuring cylinder monitoring, engine parameters, and fuel planning. Developed modular UI components, real-time data integration, and customizable alert systems to enhance pilot situational awareness and flight safety.",
-        // linkLabel: "Review the architecture >",
-        orgLabel: "Just Flight",
-        imageUrl: justflightproject,
-        backgroundColor: "#3e3e3e", // Brown-orange
-    },
-    {
-        title: "Contract C++ Developer",
-        description:
-            "Maintenance and feature development for the X-Plane World Editor (WED), a comprehensive tool for creating and editing scenery for the X-Plane flight simulator. Implemented new functionalities, optimized existing code, and ensured compatibility with the latest X-Plane versions to enhance user experience and scenery creation capabilities.",
-        // linkLabel: "Review the architecture >",
-        orgLabel: "Just Flight",
-        imageUrl: WEDproject,
-        backgroundColor: "#215a5a", // Brown-orange
-    },
+
 
 
 ];
@@ -95,13 +95,16 @@ const TaskCarousel: React.FC = () => {
                     </h2>
                     <div className="partners-logos">
 
-                        {partners.map((partner) => (
-                            <img
-                                key={partner.name}
-                                src={partner.logo}
-                                alt={partner.name}
-                                className="partner-logo"
-                            />
+                        {clients.map((client) => (
+                            <div>
+                                <img
+                                    key={client.name}
+                                    src={client.logo}
+                                    alt={client.name}
+                                    className="partner-logo"
+                                />
+                            </div>
+
                         ))}
                     </div>
                 </section>

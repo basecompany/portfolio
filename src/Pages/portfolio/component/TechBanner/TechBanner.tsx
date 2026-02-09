@@ -13,11 +13,11 @@ import xpSDK from "../../../../assets/technologie/xp.png"
 
 const techLogos = [
     { name: "cpp", src: cpp},
+    { name: "typescript", src: typescript },
+    { name: "msfsSDK", src: msfsSDK },
     { name: "xpsdk", src: xpSDK },
     { name: "angular", src: angular},
     { name: "reactjs", src: reactjs },
-    { name: "typescript", src: typescript },
-    { name: "msfsSDK", src: msfsSDK },
     { name: "nodejs", src: nodejs },
     { name: "springboot", src: springboot },
 ];

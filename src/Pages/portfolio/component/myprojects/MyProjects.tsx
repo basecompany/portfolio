@@ -1,5 +1,4 @@
 import './MyProjects.css'
-import spartanproject from "../../../../assets/projects/Spartan_Executive.png";
 import magxproject from "../../../../assets/projects/magx.png"
 
 // import justflightproject from "../../../../assets/projects/justflight.png";
@@ -39,6 +38,19 @@ const projects: Project[] = [
         images: [pecuniaproject]
     },
     {
+        img: magxproject,
+        alt: "MAGX",
+        title: "MAGX - ATCO Management",
+        date: "2022-2024",
+        role: "Full Stack Developer | Founder",
+        description: "Real-time management platform for air traffic control operations, with live updates, user roles, and analytics dashboard.",
+        techStack: ["React", "ExpressJS", "Figma"],
+        link: "#",
+        linkText: "View Project",
+        links: [],
+        images: [magxproject]
+    },
+    {
         img: ratioproject,
         alt: "Ratio",
         title: "Ratio - Investment Portfolio Analyzer",
@@ -64,35 +76,6 @@ const projects: Project[] = [
         links: [],
         images: [scholaproject]
     },
-    {
-        img: spartanproject,
-        alt: "Shadin Project",
-        title: "Spartan Executive - Shadin Mini-FLO Gauge",
-        date: "2024",
-        role: "Junior Developer",
-        description: "Developed a custom fuel flow gauge for the Spartan Executive aircraft in Microsoft Flight Simulator, integrating real-time data and legacy avionics for a seamless user experience.",
-        techStack: ["MSFS SDK", "TypeScript"],
-        link: "https://inibuilds.com/products/inibuilds-spartan-7w-executive-msfs",
-        linkText: "View Project",
-        links: [
-            { label: "Product Page", url: "https://inibuilds.com/products/inibuilds-spartan-7w-executive-msfs" }
-        ],
-        images: [spartanproject]
-    },
-    {
-        img: magxproject,
-        alt: "MAGX",
-        title: "MAGX - ATCO Management",
-        date: "2022-2024",
-        role: "Full Stack Developer | Founder",
-        description: "Real-time management platform for air traffic control operations, with live updates, user roles, and analytics dashboard.",
-        techStack: ["React", "ExpressJS", "Figma"],
-        link: "#",
-        linkText: "View Project",
-        links: [],
-        images: [magxproject]
-    },
-
 ];
 
 function MyProjects() {
